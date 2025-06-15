@@ -35,7 +35,16 @@
                 <li><a href="#piegade">Piegāde</a></li>
                 <li><a href="#par_mums">{{__('app.About_us')}}</a></li>
                 <li><a href="#kontakti">{{__('app.Contacts')}}</a></li>
-                
+                @guest
+                    <li><a href="">{{__('app.Log in')}}</a></li>
+                    <li><a href="">{{__('app.register')}}</a></li>
+                @endguest
+
+                @auth
+                    {{-- <li><a href="/marketplace/my-listings">{{__('app.my offers')}}</a></li>--}}
+                    <li><a href="/marketplace/create">{{__('app.create')}}</a></li>
+                    <li><a href="" onclick="event.preventDefault();document.getElementById('logout_form').submit();"> {{__('app.logout')}} </a></li> 
+                @endauth
             </ul>      
         </nav>
         <nav class="navbar">            
@@ -54,7 +63,23 @@
                 </li>
                 <li class="mobile"><a href="#piegade">Piegāde</a></li>
                 <li class="mobile"><a href="#par_mums">{{__('app.About_us')}}</a></li>
-                <li class="mobile"><a href="#kontakti">{{__('app.Contacts')}}</a></li>
+                <li class="mobile"><a href="#kontakti">{{__('app.Contacts')}}</a></li>   
+                @guest             
+                    <li><a href="{{route('show.login')}}">{{__('app.Log in')}}</a></li>
+                    <li><a href="{{route('show.register')}}">{{__('app.register')}}</a></li>
+                @endguest
+                @auth
+                    
+                    {{-- <li><a href="/marketplace/my-listings">{{__('app.my offers')}}</a></li>--}}
+                    <li><a href="/marketplace/create">{{__('app.create')}}</a></li>
+
+                    <form id="logout_form" action="{{route('logout')}}" method="POST" style="display:none;">
+                        @csrf
+                    </form>
+                    <li><a href="" onclick="event.preventDefault();document.getElementById('logout_form').submit();"> {{__('app.logout')}} </a></li> 
+                @endauth
+                    
+                
                 <li id="sidebar_open">
                     Pārskats
                 </li>

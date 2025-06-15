@@ -6,6 +6,7 @@ return [
     "selection"=> "Store selection",
     "About_us"=> "About us",
     "Contacts"=> "Contacts",
+    "my offers"=> "My offers",
 
     "c_table_bio"=> "Here you can create a listing.",
     "c_table"=> "Create listing",

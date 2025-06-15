@@ -1,6 +1,6 @@
 <x-layout>
     <h2>{{__('app.c_table')}}</h2>
-    <section id="section_kontakti">
+    <section >
             <div class="nav_objects" id="kontakti"><h2>{{__('app.c_table')}}</h2></div>
             <div class="div_text">
                 <p>{{__('app.c_table_bio')}}</p>

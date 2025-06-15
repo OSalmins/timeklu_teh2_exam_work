@@ -6,6 +6,7 @@ return [
     "selection"=> "Piedāvājums",
     "About_us"=> "Par mums",
     "Contacts"=> "Kontakti",
+    "my offers"=> "Mani piedāvājumi",
 
     "c_table_bio"=> "Šeit tu vari izveidot sludinājumu.",
     "c_table"=> "Izveidot sludinājumu",

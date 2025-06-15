@@ -1,6 +1,6 @@
 <x-layout>
     
-    <div class="nav_objects" id="piedavajums"><h1>{{__('app.offers')}}</h1></div>
+    <div class="nav_objects" id="piedavajums"><h1>{{__('app.my offers')}}</h1></div>
 
     <div class="container_piedavajumi container_edamgaldi">    
         @foreach ($table as $item)

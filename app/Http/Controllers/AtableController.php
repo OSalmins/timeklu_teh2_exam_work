@@ -13,6 +13,10 @@ class AtableController extends Controller
         
         return view('marketplaces.marketplace',["table"=> $atable]);
     }
+    public function mylistings(){
+        $mylistings = Atable::FindOrFail("");
+        return view("marketplaces.mylistings");
+    }
     public function create(){
         $kinds = Table_kind::all();
         return view('marketplaces.create',['kinds'=> $kinds]);

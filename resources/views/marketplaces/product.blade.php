@@ -21,6 +21,8 @@
             <div>
                 <p> {{__('app.description')}}:<br> {{$table["description"]}}</p>
             </div>
+            
+            {{--
             <form action="{{route('marketplace.update', $table)}}" method="POST" >
                 @csrf
                 @method('UPDATE') 
@@ -30,6 +32,9 @@
                 </div>
 
             </form>
+
+            --}}
+
             <form action="{{route('marketplace.delete', $table->id)}}" method="POST" >
                 @csrf
                 @method('DELETE') 
