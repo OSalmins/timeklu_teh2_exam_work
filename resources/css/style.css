@@ -1,0 +1,333 @@
+*{
+    font-family:"Poppins", "Nunito Sans";
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: green;
+}
+
+main{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+header{
+    position:sticky;
+    top: 0;
+    background-color: white;
+    align-items: center;
+    padding: 5px 0px;
+    padding-bottom: 0px;
+    font-size:x-large;
+    }
+.sidebar {
+    display:none;
+    position: absolute;
+    top:0;
+    right: 0;
+    background-color: white;
+    height: 100vh;
+    padding:20px;
+    
+}
+.sidebar ul{
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+}
+
+.navbar ul{
+    width:100%;
+    list-style-type: none;
+    font-size: large;
+    display:flex;
+    justify-content:flex-end ;       
+  }
+.navbar li, .sidebar li {
+    background-color: white;
+    color:black;
+    padding: 16px;
+    padding-bottom:5px;
+    float: left;
+
+  }
+  .navbar li:first-child{
+    margin-right: auto;
+    color:green;
+}
+.navigation a{
+    text-decoration: none;
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    color:black;
+  }
+.navigation a:hover{
+    
+    color: green;  
+  }
+
+
+
+.dropdown .content a{   
+    display: block;
+    color:black;
+    text-decoration: none;
+    padding: 10px;
+
+}
+.navbar .dropdown .content{
+    display: none;
+    position:absolute;
+    background-color:rgba(255, 255, 255, 0.74);
+
+}
+.sidebar .content{
+    display: none;
+    position:relative;
+}
+.dropdown:hover .content{
+    display: block;
+    
+}
+.content a:hover{
+    color:green;
+}
+#sidebar_open {
+    cursor: pointer;
+    display: none;
+}
+#sidebar_close{
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 10px;
+    justify-content: flex-end;
+    padding:0px;
+    background-color: rgb(231, 231, 231);
+    border-radius: 5px;
+}
+#sidebar_open {
+    cursor: pointer;
+}
+
+#homescreen{
+    background-image: url(pictures/background_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height:300px;
+    border: 1px solid black;
+    align-content: center;
+    color: green;
+    padding: 10%;
+    
+    
+}
+#homescreen p{
+    color:green;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.nav_objects {
+    display:flex;
+    justify-content: center;
+    margin:20px 0px;
+}
+.piedavajumi{
+    padding-left:5vw;
+    margin-top:30px;
+}
+
+.container_piedavajumi{
+    padding:0vh 5vw;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card{
+    margin:5px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+.card_img{
+
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.card_img img{
+    height: 360px;
+    width: 360px;
+    border-radius: 10px 10px 0px 0px;
+}
+.card_text{
+    text-align: center;
+    
+}
+.card_button{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    text-decoration: none;
+}
+.card_button a{
+    background-color: rgb(148, 216, 255);
+    font-size:larger;
+    padding:5px 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.card_button a:hover{
+    font-size:x-large;
+    color:white;
+    cursor: pointer;
+}
+
+.section_regular{
+    background-color:rgb(240, 240, 240);
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+}
+#section_specialie{
+    width:100%;
+    max-height:640px;
+    display:flex;
+}
+#section_specialie p{
+    padding: 5px;
+
+}
+#section_specialie ol{
+    padding: 5px;
+    margin-left:20px;
+    
+}
+.section_specialie_text{
+    padding:5vw;
+    width:30%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section_specialie_images{
+    width:70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_specialie_images img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    overflow:hidden;
+}
+#laiku_tabula{
+    width:50%;
+}
+table{
+    width:100%;
+    background-color: white;
+    border-collapse: collapse;
+    text-align: left;
+}
+table p{ color:black}
+tr{
+    width:100%;
+    border: 1px solid black;
+    margin:0px;
+}
+th{
+    border: 1px solid black;
+    padding: 5px;
+    width:50%; 
+}
+#table_top{text-align: center;}
+#section_kontakti{
+    background-color:rgb(240, 240, 240);
+}
+.div_text {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    text-align: center;
+
+}
+#form_button{
+    padding:10px;
+    color: black;
+    font-size:large;
+    border-radius: 10px;
+    border: 0px;
+}
+#form_button:hover{
+    color: green;
+    background-color: rgb(199, 199, 199);
+}
+
+#form_box {
+    margin-left: 15vw;
+    margin-right: 15vw;
+    align-content: center;
+    
+    background-color: white;
+}
+#form{
+    width:100%;
+}
+.form_element{
+    display:flex;
+    flex-direction: column;
+    margin:25px 0px;
+    width:100%;
+}
+.form_element label, .form_checkbox label{
+    color:green;
+}
+.form_element input, textarea{
+    border: 2px solid black;
+    padding:5px;
+    font-size: medium;
+    display:block;
+}
+.form_button{
+    width: 40%;
+    min-width: 160px;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+.error{
+    color:red;
+    padding: 5px;
+}
+
+@media(max-width:880px){
+    .mobile{
+        display: none;
+    }
+    #sidebar_open{
+        display:flex;
+    }
+    #section_specialie{
+        max-height: none;
+    }
+    .card_img img{
+    height: 200px;
+    width: 160px;
+    border-radius: 10px 10px 0px 0px;
+    }
+}
+@media(max-width:640px){
+    .section_specialie_text{
+        width:100%;   
+    }
+    .section_specialie_images{
+        display:none;
+    }
+    .card_img img{
+    height: 160px;
+    width: 160px;
+    border-radius: 10px 10px 0px 0px;
+}
+}
