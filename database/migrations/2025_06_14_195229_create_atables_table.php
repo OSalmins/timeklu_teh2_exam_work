@@ -22,6 +22,7 @@ return new class extends Migration
             $table->unsignedBigInteger('table_kind_id');
             $table->unsignedBigInteger('seller_id')->Nullable();
             $table->text('description');
+            $table->string('image_path')->nullable();
 
             $table->foreign('table_kind_id')->references('id')->on('table_kinds')->nullOnDelete();
         });

@@ -2,9 +2,9 @@
     
 
         <div>
-            <div>
-                <img src="${item.table_img}" alt="attels">
-            </div>
+            <div class="card_img">                   
+                    <img src="{{ asset('storage/' . $table->image_path) }}" alt="Product Image">
+                </div>
             <br>
             <div>
                 <h2>{{$table["name"]}}</h2>

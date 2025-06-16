@@ -2,8 +2,9 @@
     
 
         <div>
-            <div>
-                <img src="${item.table_img}" alt="attels">
+            
+            <div class="card_img">                   
+                    <img src="{{ asset('storage/' . $atable->image_path) }}" alt="Product Image">
             </div>
             <br>
             <div>
@@ -28,7 +29,7 @@
                 
                 <div class="form_element form_button">
                     <label for="submit"></label>
-                    <input type="submit" value="{{__('app.update listing')}}" id="submit">
+                    <input type="submit" value="{{__('app.Update listing')}}" id="submit">
                 </div>
 
             </form>

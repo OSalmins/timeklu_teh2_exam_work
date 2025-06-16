@@ -8,7 +8,7 @@
             </div>
             
             <div id="form_box">
-                <form  id="form" action="{{route('marketplace.store')}}" method="POST">
+                <form  id="form" action="{{route('marketplace.store')}}" method="POST" enctype="multipart/form-data">
                     @csrf
                     
                     <div class="form_element">
@@ -42,6 +42,11 @@
                     <div class="form_element">
                         <label for="description">{{__('app.description')}}</label>
                         <textarea name="description" id="description"  rows="10" >{{old('description')}}</textarea>
+                    </div>
+                    <div class="form_element">
+                        <label for="image">{{__('app.image')}}</label>
+                        <input type="file"  name="image" value="{{old('image')}}">
+
                     </div>
 
                     <div class="form_element form_button">

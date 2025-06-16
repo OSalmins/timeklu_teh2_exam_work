@@ -13,8 +13,14 @@ return [
     "create"=> "Create listing",
     "logout"=> "logout",
     "Log in"=> "Log in",
-    "register"=> "Register",
+    "register"=> "register",
     "e_table"=> "Edit listing",
+    "Update listing"=>"Update listing",
+
+    "password"=>"Password",
+    "login page"=> "Login page",
+    "register page"=> "Register page",
+    "login"=> "Login",
 
     "e_table_bio"=> "Here you can edit a listing.",
     "View details"=> "View details",

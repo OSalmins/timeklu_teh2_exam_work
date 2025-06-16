@@ -25,9 +25,7 @@
                 <li>
                     <a>{{__('app.selection')}}</a>
                 </li>
-                <li><a href="#piegade">Piegāde</a></li>
-                <li><a href="#par_mums">{{__('app.About_us')}}</a></li>
-                <li><a href="#kontakti">{{__('app.Contacts')}}</a></li>
+                
                 
                 @guest
                     <li><a href="{{route('show.login')}}">{{__('app.Log in')}}</a></li>
@@ -38,12 +36,13 @@
                     <li><a href="{{route('marketplace.mylistings')}}">{{__('app.my offers')}}</a></li>
                     <li><a href="/marketplace/create">{{__('app.create')}}</a></li>
                     <li><a href="" onclick="event.preventDefault();document.getElementById('logout_form').submit();"> {{__('app.logout')}} </a></li> 
-                @endauth
-                @if (session('locale')=='en')
-                    <li><a href="{{route('lang.switch',['locale'=>'lv'])}}"> {{__('app.lv')}} </a></li>
-                @else
-                    <li><a href="{{route('lang.switch',['locale'=>'en'])}}"> {{__('app.en')}} </a></li>
+                    @if (session('locale')=='en')
+                        <li><a href="{{route('lang.switch',['locale'=>'lv'])}}"> {{__('app.lv')}} </a></li>
+                    @else
+                        <li><a href="{{route('lang.switch',['locale'=>'en'])}}"> {{__('app.en')}} </a></li>
                 @endif
+                @endauth
+                
             </ul>      
         </nav>
         <nav class="navbar">            
@@ -68,12 +67,15 @@
                         @csrf
                     </form>
                     <li><a href="" onclick="event.preventDefault();document.getElementById('logout_form').submit();"> {{__('app.logout')}} </a></li> 
+
+                    @if (session('locale')=='en')
+                        <li><a href="{{route('lang.switch',['locale'=>'lv'])}}"> {{__('app.lv')}} </a></li>
+                    @else
+                        <li><a href="{{route('lang.switch',['locale'=>'en'])}}"> {{__('app.en')}} </a></li>
+                    @endif
+
                 @endauth
-                @if (session('locale')=='en')
-                    <li><a href="{{route('lang.switch',['locale'=>'lv'])}}"> {{__('app.lv')}} </a></li>
-                @else
-                    <li><a href="{{route('lang.switch',['locale'=>'en'])}}"> {{__('app.en')}} </a></li>
-                @endif
+
                     
                 
                 <li id="sidebar_open">

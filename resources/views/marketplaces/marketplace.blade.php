@@ -5,8 +5,8 @@
     <div class="container_piedavajumi container_edamgaldi">    
         @foreach ($table as $item)
             <div class="card">
-                <div class="card_img">
-                    <img src="${item.table_img}" alt="attels">
+                <div class="card_img">                   
+                    <img src="{{ asset('storage/' . $item->image_path) }}" alt="Product Image">
                 </div>
                 <div class="card_text">
                     <h3>{{$item["name"]}}</h3>    

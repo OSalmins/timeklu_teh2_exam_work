@@ -17,6 +17,12 @@ return [
     "e_table"=> "Rediģēt sludinājumu",
     "e_table_bio"=> "Šeit tu vari rediģēt sludinājumu.",
     "View details"=> "Apskatīt sīkāk",
+    "Update listing"=>"Atjaunināt sludinājumu",
+
+    "password"=>"Parole",
+    "login page"=> "Pieteikšanās lapa",
+    "register page"=> "Reģistrēšnās lapa",
+    "login"=> "Pieteikties",
 
     "seller_info"=> "Pārdevēja informācija",
     "seller_id"=> "Pārdevēja_id",

@@ -47,10 +47,24 @@ class AtableController extends Controller
             'name'=> 'required',
             'price'=> 'numeric|min:0',
             'description'=> 'required|max:500',
+            'image'=> 'nullable|image|mimes:jpg,jpeg,png,gif',
                 
         ]);
+        $image_path = null;
+        if($request->hasFile('image')){
+            $image_path = $request->file('image')->store('images', 'public');
+        }
 
-        Atable::create($validated);
+
+        Atable::create([
+            'seller_id'=> $validated['seller_id'],
+            'table_kind_id'=> $validated['table_kind_id'],
+            'name'=> $validated ['name'],
+            'price'=> $validated ['price'],
+            'description'=> $validated ['description'],
+            'image_path' =>$image_path,
+        ]);
+        
         return redirect('/marketplace');
 
     }
