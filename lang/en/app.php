@@ -1,12 +1,29 @@
 <?php
 
 return [
+    "lv"=> "lv",
+    "en"=> "en",
     "Tables"=> "Tables",
     "start"=> "Start",
     "selection"=> "Store selection",
     "About_us"=> "About us",
     "Contacts"=> "Contacts",
     "my offers"=> "My offers",
+    "offers"=> "Offers",
+    "create"=> "Create listing",
+    "logout"=> "logout",
+    "Log in"=> "Log in",
+    "register"=> "Register",
+    "e_table"=> "Edit listing",
+
+    "e_table_bio"=> "Here you can edit a listing.",
+    "View details"=> "View details",
+
+
+    "seller_info"=> "Seller info",
+    "seller_id"=> "Seller_id",
+    "name"=> "Name",
+    "email"=> "Email",
 
     "c_table_bio"=> "Here you can create a listing.",
     "c_table"=> "Create listing",

@@ -1,12 +1,27 @@
 <?php
 
 return [
+    "lv"=> "lv",
+    "en"=> "en",
     "Tables"=> "Galdi",
     "start"=> "Sākums",
     "selection"=> "Piedāvājums",
     "About_us"=> "Par mums",
     "Contacts"=> "Kontakti",
     "my offers"=> "Mani piedāvājumi",
+    "offers"=> "Piedāvājums",
+    "create"=> "Izveidot sludinājumu",
+    "logout"=> "iziet",
+    "Log in"=> "pieteikties",
+    "register"=> "Reģistrēties",
+    "e_table"=> "Rediģēt sludinājumu",
+    "e_table_bio"=> "Šeit tu vari rediģēt sludinājumu.",
+    "View details"=> "Apskatīt sīkāk",
+
+    "seller_info"=> "Pārdevēja informācija",
+    "seller_id"=> "Pārdevēja_id",
+    "name"=> "Vārds",
+    "email"=> "Epasts",
 
     "c_table_bio"=> "Šeit tu vari izveidot sludinājumu.",
     "c_table"=> "Izveidot sludinājumu",

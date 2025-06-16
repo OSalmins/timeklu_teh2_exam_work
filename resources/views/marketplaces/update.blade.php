@@ -1,15 +1,16 @@
 <x-layout>
-    <h2>{{__('app.c_table')}}</h2>
+    
     <section >
-            <div class="nav_objects" id="kontakti"><h2>{{__('app.c_table')}}</h2></div>
+            <div class="nav_objects"><h2>{{__('app.e_table')}}</h2></div>
             <div class="div_text">
-                <p>{{__('app.c_table_bio')}}</p>
+                <p>{{__('app.e_table_bio')}}</p>
                 
             </div>
             
             <div id="form_box">
-                <form  id="form" action="{{route('marketplace.store')}}" method="POST">
+                <form  id="form" action="{{route('marketplace.update', ['atable'=>$table->id])}}" method="POST">
                     @csrf
+                    @method('PUT')
                     
                     <div class="form_element">
                         
@@ -30,18 +31,18 @@
 
                     <div class="form_element">
                         <label for="name">{{__('app.table_name')}}</label>
-                        <input type="text" name="name" id="name" required placeholder="Oak table" value="{{old('name')}}">
+                        <input type="text" name="name" id="name" required placeholder="Oak table" value="{{old('name',$table->name)}}">
                     </div>
 
                     <div class="form_element">
                         <label for="price">{{__('app.price')}}</label>
-                        <input type="number"  name="price" id="price" required placeholder="250" value="{{old('price')}}">
+                        <input type="number"  name="price" id="price" required placeholder="250" value="{{old('price',$table->price)}}">
 
                     </div>
                     
                     <div class="form_element">
                         <label for="description">{{__('app.description')}}</label>
-                        <textarea name="description" id="description"  rows="10" >{{old('description')}}</textarea>
+                        <textarea name="description" id="description"  rows="10" >{{old('description',$table->description)}}</textarea>
                     </div>
 
                     <div class="form_element form_button">

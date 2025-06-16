@@ -3,7 +3,7 @@
     <div class="nav_objects" id="piedavajums"><h1>{{__('app.my offers')}}</h1></div>
 
     <div class="container_piedavajumi container_edamgaldi">    
-        @foreach ($table as $item)
+        @foreach ($mylistings as $item)
             <div class="card">
                 <div class="card_img">
                     <img src="${item.table_img}" alt="attels">
@@ -15,7 +15,8 @@
                     <i>{{$item["price"]}}</i>
                 </div>
                 <div class="card_button">
-                    <a href="/marketplace/{{$item["id"]}}">View details</a>
+                    <a href="/marketplace/mylistings/mylisting/{{$item["id"]}}">{{__('app.View details')}}</a>
+
                 </div>
             </div>
         @endforeach
@@ -23,7 +24,5 @@
         
             
     </div>
-    <div class="section_regular" >
-        <div id="pagination">{{$table->links()}}</div>
-    </div>
+    
 </x-layout>

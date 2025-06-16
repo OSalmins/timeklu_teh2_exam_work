@@ -15,7 +15,7 @@
                     <i>{{$item["price"]}}</i>
                 </div>
                 <div class="card_button">
-                    <a href="/marketplace/{{$item["id"]}}">View details</a>
+                    <a href="/marketplace/{{$item["id"]}}">{{__('app.View details')}}</a>
                 </div>
             </div>
         @endforeach

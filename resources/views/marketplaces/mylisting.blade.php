@@ -7,33 +7,25 @@
             </div>
             <br>
             <div>
-                <h2>{{$table["name"]}}</h2>
+                <h2>{{__('app.name')}}:<br> {{$atable["name"]}}</h2>
             </div>
             <br>
             <div>
-                <h2>{{__('app.price')}}: {{$table["price"]}}</h2>
+                <h2>{{__('app.price')}}: {{$atable["price"]}}</h2>
             </div>
             <br>
             <div>
-                <h2>{{__('app.seller_info')}}:</h2>
-                <p>{{__('app.seller_id')}}: {{$table["seller_id"]}}</p>
-                @if($seller)
-                    <p>{{__('app.name')}}: {{$seller["name"]}}</p>
-                    <p>{{__('app.email')}}: {{$seller["email"]}}</p>
-                @endif
-
+                <p>{{__('app.seller_id')}}: {{$atable["seller_id"]}}</p>
             </div>
             <br>
             <div>
-                <h2>{{__('app.description')}}:</h2>
-                <br>
-                <p>{{$table["description"]}}</p>
+                <p> {{__('app.description')}}:<br> {{$atable["description"]}}</p>
             </div>
             
-            {{--
-            <form action="{{route('marketplace.update', $table)}}" method="POST" >
+            
+            <form action="{{route('marketplace.edit', $atable)}}" method="GET" >
                 @csrf
-                @method('UPDATE') 
+                
                 <div class="form_element form_button">
                     <label for="submit"></label>
                     <input type="submit" value="{{__('app.update listing')}}" id="submit">
@@ -43,7 +35,7 @@
 
             
 
-            <form action="{{route('marketplace.delete', $table->id)}}" method="POST" >
+            <form action="{{route('marketplace.delete', $atable->id)}}" method="POST" >
                 @csrf
                 @method('DELETE') 
                 <div class="form_element form_button">
@@ -52,7 +44,6 @@
                 </div>
 
             </form>
-            --}}
         </div>
     
 </x-layout>
